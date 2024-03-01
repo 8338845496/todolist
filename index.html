@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <section id="container">
+        <h1 class="todoListHeading">Todo List</h1>
+        <button class="addNewTaskBtn">New Task</button>
+
+        <div class="searchSection">
+            <input class="searchInput" type="text" placeholder="Search" oninput="searchFunc()">
+            <div class="searchList"></div>
+        </div>
+
+        <section class="filterAndSortBtns">
+            <button class="sortTaskBtn" style="border-radius: 6px;">Sort by</button>
+            <button class="deleteAllBtn" style="border-radius: 6px;">Delete All</button>
+            <input type="checkbox" id="selectAll" class="selectAllCheckbox">
+            <label for="selectAll" >Select All</label>
+        </section>
+
+        <section class="taskList"></section>
+    </section>
+
+    <section id="addTaskModal">
+        <h1 class="addNewTaskHeading">Add New Task</h1>
+        <input class="addTaskTitle" type="text" placeholder="new text">
+        <button class="addTask">Add Task</button>
+    </section>
+
+    <section id="editTaskModal">
+        <h3 class="editTaskHeading">Edit Task</h3>
+        <input class="editTaskTitle" type="text" placeholder="new text">
+        <button class="confirmTask">Reset Task</button>
+    </section>
+
+    <section id="deleteConfirmModal">
+        <p>Are you sure delete the task?</p>
+        <div>
+            <button class="dontDltBtn">No</button>
+            <button class="confirmDltBtn">Yes</button>
+        </div>
+    </section>
+
+    <section id="sortTasksModal">
+        <h1 class="sortTaskHeading">Sort Tasks by Title</h1>
+        <div>
+            <button class="sortTaskByAscBtn">Sort by a to z</button>
+            <button class="sortTaskBydesBtn">Sort by z to a </button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
